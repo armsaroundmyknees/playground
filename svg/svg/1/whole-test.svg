@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	y="0px" viewBox="0 0 1400 800" enable-background="new 0 0 1400 800" xml:space="preserve">
+	<g id="BOX_LEFT">
+		<rect x="118.5" y="112" fill="#FF8D8D" width="496.7" height="627" />
+	</g>
+	<g id="RIBBON_AND_LOVE">
+		<g id="RIBBON">
+			<rect x="118.5" y="363" fill="#518AAD" width="604" height="125" />
+		</g>
+		<path id="LOVE" fill="#AED2E8" d="M493.7,318.1c-15.3-15.3-35.4-23-55.5-23c-20.1,0-40.2,7.7-55.5,23L366.8,334l-15.9-15.9
+		c-15.3-15.3-35.4-23-55.5-23c-20.1,0-40.1,7.7-55.5,23c-30.6,30.6-30.6,80.3,0,110.9l15.9,15.9l110.9,110.9l110.9-110.9l15.9-15.9
+		C524.3,398.4,524.3,348.7,493.7,318.1z" />
+	</g>
+	<rect id="BOTTOM_RECTANGLE" x="118.5" y="707.4" fill="#AED2E8" width="1179.1" height="31.6" />
+	<g id="ROUNDED_BOX_RIGHT">
+		<path fill="#518AAD" d="M1047.7,739L1047.7,739C918.6,739,814,634.3,814,505.2V345.8C814,216.7,918.6,112,1047.7,112h0
+		c129.1,0,233.8,104.7,233.8,233.8v159.5C1281.5,634.3,1176.8,739,1047.7,739z" />
+	</g>
+	<g id="STAR">
+		<defs>
+			<polygon id="SVGID_1_" points="1047.7,280.4 1094.9,375.9 1200.3,391.3 1124,465.6 1142,570.6 1047.7,521 953.5,570.6 
+			971.5,465.6 895.2,391.3 1000.6,375.9 		" />
+		</defs>
+		<clipPath id="SVGID_00000000211383355084007830000009726433782843933881_">
+			<use xlink:href="#SVGID_1_" overflow="visible" />
+		</clipPath>
+		<g transform="matrix(1 0 0 1 0 -1.525879e-05)"
+			clip-path="url(#SVGID_00000000211383355084007830000009726433782843933881_)">
+
+			<image overflow="visible" width="1646" height="1176" xlink:href="hover-2.jpg"
+				transform="matrix(0.328 0 0 0.328 783.651 200.2486)">
+			</image>
+		</g>
+		<g clip-path="url(#SVGID_00000000211383355084007830000009726433782843933881_)">
+
+			<image overflow="visible" width="640" height="637" xlink:href="hover-1.jpg"
+				transform="matrix(0.6574 0 0 0.6574 837.3895 254.6561)">
+			</image>
+		</g>
+	</g>
+</svg>

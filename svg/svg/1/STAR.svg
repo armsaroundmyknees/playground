@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" width="305.03" height="290.1"
+    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 305.03 290.1">
+    <defs>
+        <clipPath id="clippath">
+            <polygon
+                points="152.52 0 199.65 95.5 305.03 110.81 228.77 185.14 246.78 290.1 152.52 240.55 58.26 290.1 76.26 185.14 0 110.81 105.39 95.5 152.52 0"
+                fill="none" />
+        </clipPath>
+    </defs>
+    <g id="Layer_1-2">
+        <g id="STAR">
+            <g clip-path="url(#clippath)">
+                <image width="1646" height="1176" transform="translate(-111.57 -80.2) scale(.33)"
+                    xlink:href="hover-2.jpg" />
+                <image width="640" height="637" transform="translate(-57.84 -25.79) scale(.66)"
+                    xlink:href="hover-1.jpg" />
+            </g>
+        </g>
+    </g>
+</svg>

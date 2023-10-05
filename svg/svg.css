@@ -1,0 +1,116 @@
+*
+{
+        margin:0;
+        box-sizing: border-box;
+        
+}
+
+
+
+body {
+    background-color: black;
+}
+
+svg {
+/*     width:  auto;
+    height: auto;  */
+    
+}
+
+.container {
+    background-color: red;
+    width: 80vw;
+    height: auto;
+    margin: 20px auto;
+}
+
+
+.container-size {
+    width: 1400px;
+    height: 800px;
+}
+
+
+.svg-luar-1 {
+    background-color: rgb(212, 196, 165);
+
+    margin: auto;
+}
+
+
+
+.svg-dalem-1 {
+    width: 100px;
+    height: 100px;
+    fill: red;
+}
+
+.svg-dalem-2 {
+    r: 10px;
+    cx: 50px;
+    cy: 50px;
+    fill:salmon;
+}
+
+.box-left {
+    x: 118.5px;
+    y: 112px;
+}
+
+/* feedback hover each shapes */
+
+#RIBBON rect {
+    width:604px;
+    height:125px;
+    transition: all 500ms ease-in-out;
+}
+
+#RIBBON rect:hover {
+    width:1000px;
+    height:125px;
+    fill:#426f8b;
+    cursor:pointer;
+}
+
+#BOX_LEFT {
+    fill: #FF8D8D;
+    transition: all 500ms ease-in-out;
+}
+
+#BOX_LEFT:hover {
+    fill: rgb(139, 57, 57);
+    cursor: pointer;
+}
+
+
+#STARlayer2 {
+    display: block;
+}
+
+#STARlayer2:hover {
+    display: none;
+}
+
+#STARlayer2:active {
+    display: none;
+}
+
+#STAR:hover {
+    cursor: pointer;
+}
+
+#LOVE {
+    fill:#AED2E8;
+    /* animation-name: scale-love;
+    animation-duration: 4s;
+    animation-iteration-count: infinite; */
+    transform: translate(10px, 10px);
+    
+}
+
+
+@keyframes scale-love {
+    0%   {fill:#AED2E8; transform: scale(1);}
+    50% {fill:red; transform: scale(0.5);}
+    100% {fill:#AED2E8; transform: scale(1);}
+}
