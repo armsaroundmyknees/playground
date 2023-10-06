@@ -19,7 +19,26 @@
 .nav-mobile-chapter {
     flex: 1 0 auto;
     border: 1px solid blue;
+    cursor: pointer;
 }
+
+.nav-mobile-chapter-list {
+    display: none;
+}
+
+
+.buka {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-color: antiquewhite;
+    position: absolute;
+    top:80px;
+    border:2px dashed black;
+    transition: opacity 2s linear, height 2s step-start;
+}
+
+
 
 /***
   
