@@ -9,6 +9,9 @@
     height: 80px;
     display: none;
     background-color: antiquewhite;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0; /* required */
 }
 
 .nav-mobile-judul {
@@ -125,17 +128,24 @@
 
     .container-nav-kanan {
         flex-direction: row;
-        width: 50%;
+        width: 100%;
         gap:0;
         margin: auto;
         flex: 1 0 auto;
+        position: sticky;
+        position: -webkit-sticky;
+        bottom: 0; /* required */
+        background-color: antiquewhite;
+        align-items: center;
+        
     }
 
     .nav-kanan-prev,
     .nav-kanan-next,
     .nav-kanan-sound {
-        flex: 1 0 auto;
-        min-height: 7vh;
+        flex: 0 1 auto;
+        width: 100px;
+        background-color: antiquewhite;
 
     }
 
@@ -146,6 +156,8 @@
 
     .container-nav-mobile {
         display: flex;
+        position: sticky;
+        
     }
 }
 
@@ -167,18 +179,25 @@
 
     .container-nav-kanan {
         flex-direction: row;
-        width: 50%;
-        justify-content: center;
+        width: 100%;
         gap:0;
         margin: auto;
         flex: 1 0 auto;
+        position: sticky;
+        position: -webkit-sticky;
+        bottom: 0; /* required */
+        background-color: antiquewhite;
+        align-items: center;
+        
     }
 
     .nav-kanan-prev,
     .nav-kanan-next,
     .nav-kanan-sound {
-        flex: 1 0 auto;
-        min-height: 7vh;
+        flex: 0 1 auto;
+        width: 100px;
+        background-color: antiquewhite;
+
     }
 
     .container-nav-kiri {
