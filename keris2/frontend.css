@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+}
+
+
+
+.nav-mobile-top {
+    /* background-color: grey; */
+    width: 100vw;
+    height: 11vh;
+    margin: auto;
+    padding: 10px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    display: none;
+    background-image: url("assets/ui/nav_top_mobile-1.png");
+    background-size: 100% 100%;
+    background-repeat: repeat-y;
+    background-position: top;
+    margin-bottom: 10px;
+}
+
+
+.container {
+    /* background-color: rgb(63, 63, 63); */
+    width: 97vw;
+    min-height: 100vh;
+    margin: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 5px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+.nav-desktop-left {
+    /* background-color: grey; */
+    width: 14.5%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    padding: 5px;
+    background-image: url("assets/ui/nav_left_desktop-1.png");
+    background-size: 100% auto;
+    background-repeat: repeat-y;
+    background-position: top;
+}
+
+.nav-desktop-left-mg {
+    background-image: url("assets/ui/nav_left_desktop-2.png");
+    background-size: 100% auto;
+    background-repeat: repeat-y;
+    background-position: top;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.bg-contain {
+    background-size: cover;
+}
+
+.nav-desktop-ch {
+    border: 2px solid white;
+    width: 3vw;
+    height: 3vw;
+    margin: 100px auto;
+    border-radius: 50%;
+}
+
+.nav-desktop-ch:first-child {
+    border: 2px solid white;
+    width: 4vw;
+    height: 4vw;
+    margin-top: 12vh;
+    left: 30%;
+    position: absolute;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.nav-desktop-ch:nth-child(2) {
+    border: 2px solid white;
+    width: 4vw;
+    height: 4vw;
+    margin-top: 46vh;
+    left: 40%;
+    position: absolute;
+    background-color: yellow;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.nav-desktop-ch:last-child {
+    border: 2px solid white;
+    width: 4vw;
+    height: 4vw;
+    top: 71vh;
+    left: 43%;
+    position: absolute;
+    margin-top: 140px;
+    background-color: green;
+    border-radius: 50%;
+    position: absolute;
+}
+
+
+.contents {
+    /* background-color: gray; */
+    width: 79%;
+    padding: 10px;
+    min-height: 140%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 10px;
+    margin-left: 15vw;
+    flex-grow: 1;
+}
+
+.intro,
+.chapter-1,
+.chapter-2,
+.chapter-3,
+.end {
+    width: 98%;
+    margin: 0 auto;
+    padding: 5px;
+    min-height: 40vh;
+}
+
+.intro {
+    background-color: #c2c2c2;
+}
+
+.chapter-1 {
+    background-color: #e4e4e4;
+    height: 150vh;
+}
+
+.chapter-2 {
+    background-color: #c2c2c2;
+    height: 180vh;
+}
+
+.chapter-3 {
+    background-color: #e4e4e4;
+    height: 160vh;
+}
+
+.end {
+    background-color: #c2c2c2;
+}
+
+
+.popup-container {
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.712);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+}
+
+.more-info-popup {
+    height: 90%;
+    width: 90%;
+    background-color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+    font-size: 1em;
+    transition: all 500ms ease-in-out;
+    position: absolute;
+}
+
+.popup-buttons {
+    height: 5%;
+    background-color: rgb(189, 189, 189);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.popup-contents {
+    height: 95%;
+    background-color: rgb(189, 189, 189);
+    padding: 40px;
+}
+
+.popup-container.closed {
+    visibility: hidden;
+    opacity: 0.1;
+    transition: all 500ms ease-in-out;
+}
+
+.popup-container.closed .more-info-popup {
+    transform: scaleY(0);
+    font-size: 0em;
+}
+
+
+
+
+/* // phone */
+
+@media (max-width: 600px) {
+    .nav-mobile-top {
+        display: flex;
+    }
+
+    .container {
+        width: 100vw;
+    }
+
+    .nav-desktop-left {
+        display: none;
+    }
+
+    .contents {
+        width: 100%;
+        margin: 0;
+    }
+
+}
