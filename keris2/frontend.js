@@ -18,6 +18,18 @@ document.querySelectorAll(".nav-desktop-ch")[2].addEventListener('click', functi
   gotoChapter("chapter-3")
 })
 
+document.querySelectorAll(".nav-mobile-ch")[0].addEventListener('click', function () {
+  gotoChapter("chapter-1")
+})
+
+document.querySelectorAll(".nav-mobile-ch")[1].addEventListener('click', function () {
+  gotoChapter("chapter-2")
+})
+
+document.querySelectorAll(".nav-mobile-ch")[2].addEventListener('click', function () {
+  gotoChapter("chapter-3")
+})
+
 // fungsi popup more info
 
 
