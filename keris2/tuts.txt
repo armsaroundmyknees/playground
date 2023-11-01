@@ -1,2 +1,12 @@
 prevent page scrolling when modal is open
 https://css-tricks.com/prevent-page-scrolling-when-a-modal-is-open/
+
+scrolltoview
+https://stackoverflow.com/questions/14411176/window-location-with-the-same-pagediv-id
+
+How can I calculate an elements scroll position as a percentage?
+https://stackoverflow.com/questions/76581510/how-can-i-calculate-an-elements-scroll-position-as-a-percentage
+
+Technique in Javascript to Calculate Vertical Scrolling Percentage Across Multiple Browsers
+https://copyprogramming.com/howto/cross-browser-method-to-determine-vertical-scroll-percentage-in-javascript
+
