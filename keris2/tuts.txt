@@ -10,3 +10,15 @@ https://stackoverflow.com/questions/76581510/how-can-i-calculate-an-elements-scr
 Technique in Javascript to Calculate Vertical Scrolling Percentage Across Multiple Browsers
 https://copyprogramming.com/howto/cross-browser-method-to-determine-vertical-scroll-percentage-in-javascript
 
+https://stackoverflow.com/questions/635706/how-to-scroll-to-an-element-inside-a-div
+
+Add an Event Listener to Multiple Elements with JavaScript
+https://www.codeinwp.com/snippets/add-event-listener-to-multiple-elements-with-javascript/
+
+https://shortcode.dev/javascript-cheatsheet
+https://jujuontheweb.medium.com/javascript-cheatsheet-for-selectors-event-listeners-and-creating-html-elements-eb2cfc94499c
+
+
+How to check if element is visible after scrolling?
+The easiest solution I found for this is Intersection Observer API:
+https://stackoverflow.com/questions/487073/how-to-check-if-element-is-visible-after-scrolling
