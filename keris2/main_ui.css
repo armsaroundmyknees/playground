@@ -10,6 +10,21 @@ html {
 
 body {
   background-color: white;
+  animation: 3s ease-out 0s 1 transisiAwal;
+}
+
+@keyframes transisiAwal {
+  0% {
+    opacity: 0;
+  }
+
+  70% {
+    opacity: 0.9;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .container {
