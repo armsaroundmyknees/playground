@@ -102,19 +102,19 @@ function hitungScrollBody() {
 ////------- trigger pas discroll ngapain saja -------////
 // cara jadul
 // ganti progres bar di navigasi sesuai scroll
-// document.body.onscroll = function () {
-//   progresBarDesktop.style.height = currentScrollPercentage() + "%";
-//   progresBarMobile.style.width = currentScrollPercentage() + "%";
+ document.body.onscroll = function () {
+   progresBarDesktop.style.height = currentScrollPercentage() + "%";
+   progresBarMobile.style.width = currentScrollPercentage() + "%";
 //   // console.log(currentScrollPercentage());
-// };
+ };
 
 // modern way
-window.addEventListener("scroll", function () {
-  // console.log(currentScrollPercentage());
-  progresBarDesktop.style.height = currentScrollPercentage() + "%";
-  progresBarMobile.style.width = currentScrollPercentage() + "%";
-  // console.log(hitungScrollBody());
-});
+// window.addEventListener("scroll", function () {
+//   // console.log(currentScrollPercentage());
+//   progresBarDesktop.style.height = currentScrollPercentage() + "%";
+//   progresBarMobile.style.width = currentScrollPercentage() + "%";
+//   // console.log(hitungScrollBody());
+// });
 
 ////------- trigger pas discroll ngapain saja -------////
 var contentsObserver = new IntersectionObserver(
