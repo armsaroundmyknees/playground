@@ -10,7 +10,8 @@ html {
 
 body {
   background-color: white;
-  animation: 3s ease-out 0s 1 transisiAwal;
+  animation: 4s ease-in 0s 1 transisiAwal;
+  overflow-x:hidden;
 }
 
 @keyframes transisiAwal {
@@ -333,7 +334,7 @@ body {
 
 /* // phone */
 
-@media (max-width: 900px) {
+@media (max-width: 600px) {
   .nav-mobile-top {
     display: flex;
   }

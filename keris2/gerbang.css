@@ -2,15 +2,21 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    /* border: 1px solid green; */
 }
 
 html {
     scroll-behavior: smooth;
+    overflow: hidden;
 }
 
 body {
     overflow: hidden;
-    /* background-color: black; */
+    background-color: white;
+}
+
+.byebye {
+    animation: 2s ease-in 0s 1 transisiAkhir;
 }
 
 @keyframes slideInFromLeft {
@@ -23,27 +29,153 @@ body {
     }
 }
 
+@keyframes transisiAkhir {
+    0% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  }
+
 .container {
-    background-color: black;
-    height: 100vh;
-    width: 100vw;
+    background-color: white;
+    height: 95vh;
+    width: 90vw;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: nowrap;
     flex-direction: column;
+    overflow: hidden;
+    margin: auto;
 }
 
 .contents {
-    animation: 600ms ease-out 0s 1 slideInFromLeft;
-    width: 30%;
-    height: 90%;
-    background-color: antiquewhite;
-    cursor: pointer;
+    /* animation: 600ms ease-out 0s 1 slideInFromLeft; */
+    width: 100%;
+    height: 80%;
+    /* background-color: antiquewhite; */
+    /* cursor: pointer; */
     transition: all 200ms ease-in-out;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+
 }
 
-.contents:hover {
+
+
+/* .contents:hover {
     transform: scale(1.03);
     background-color: white;
+} */
+
+.pembungkus-keris {
+    /* animation: 600ms ease-out 0s 1 slideInFromLeft; */
+    transform: rotate(3deg);
+    /* background-color: antiquewhite; */
+    /* cursor: pointer; */
+    transition: all 200ms ease-in-out;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    
+}
+
+
+.pembuka-gerbang {
+    height: 90%;
+    position: absolute;
+    transition: all 300ms ease-out;
+    cursor: grab;
+    
+}
+
+
+@keyframes pembukaGerbangHint {
+    0% {
+        transform: translateY(0vh);
+    }
+
+    50% {
+        transform: translateY(-4vh);
+    }
+
+    100% {
+        transform: translateY(0vh);
+    }
+}
+
+
+
+
+.pembuka-gerbang:nth-child(2).is-pointer-down {
+     transform: scale(1.1) translateY(-2vh);
+     transition: all 300ms ease-in-out; 
+}
+
+.pembuka-gerbang:nth-child(2).is-dragging {
+    transform: scale(1);
+    transition: all 100ms ease-in-out; 
+}
+
+
+.pembuka-gerbang-hint {
+    animation: 2s ease 0s infinite pembukaGerbangHint;
+}
+
+
+.pembuka-gerbang-hint-removed {
+    transform: translateY(0vh);
+    animation: 500ms ease 0s infinite pembukaGerbangHintRemoved;
+}
+
+
+@keyframe pembukaGerbangHintRemoved {
+    from {
+        opacity:1;
+    },
+    to {
+        transform: scale(1.1);
+        opacity: 0;
+    }
+}
+
+.contents-caption {
+    width: 100%;
+    transition: all 200ms ease-in;
+}
+
+.contents-caption h1.caption-buka {
+    color: #5e5e5e;
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    transition: opacity .5s ease;
+
+}
+
+@media (max-width: 600px) {
+    .contents {
+        margin-top: -3vh;
+        width: 100%;
+        height: 70%;
+    }
+
+    .contents-caption h1.caption-buka {
+        font-size: 1em;
+        font-weight: 400;
+        
+    }
+}
+
+.pembuka-gerbang:hover {
+        transform: scale(1);
 }
