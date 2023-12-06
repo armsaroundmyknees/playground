@@ -307,7 +307,7 @@ Sortable.create(moveableContents, {
 
 //----------------- fungsi baca dan kompres gambar
 // size semua image yang diaplot
-const uploadedImageWidth = 300;
+const uploadedImageWidth = 800;
 
 function readAndCompressImage(filetoRead, callback) {
   const fr = new FileReader();
@@ -342,7 +342,7 @@ function readAndCompressImage(filetoRead, callback) {
       canvasContext.drawImage(this, 0, 0, canvas.width, canvas.height);
       let compressedUploadedImage = canvasContext.canvas.toDataURL(
         "image/jpeg",
-        90
+        100
       );
 
       // console.log(compressedUploadedImage);
