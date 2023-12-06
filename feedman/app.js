@@ -421,7 +421,7 @@ settingsButtons_uiNewImage.addEventListener("click", function () {
   allPosts.push(newDataImage);
 
   let overlayStatus = "newnewnew!!";
-  let insertPosition = "beforeend";
+  let insertPosition = "afterbegin";
 
   if (checkPostEditOverlay() == "hidden") {
     overlayStatus = "notVisible";
