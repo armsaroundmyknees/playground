@@ -446,31 +446,31 @@ settingsButtons_uiNewImage.addEventListener("click", function () {
   contentsContainer.insertAdjacentHTML(insertPosition, boxTemplateWithoutImage);
   Sortable.get(moveableContents).save();
 
+  // kalau mau cari children terbawahhhhh
+  // contentsContainer.children[contentsContainer.children.length - 1]
+
   let newImageEditButton =
-    contentsContainer.children[contentsContainer.children.length - 1]
-      .children[2].children[0].children[0];
+    contentsContainer.children[0].children[2].children[0].children[0];
 
   let newImageDeleteButton =
-    contentsContainer.children[contentsContainer.children.length - 1]
-      .children[2].children[0].children[1];
+    contentsContainer.children[0].children[2].children[0].children[1];
 
   let newImageUploadButton =
-    contentsContainer.children[contentsContainer.children.length - 1]
-      .children[0].children[0];
+    contentsContainer.children[0].children[0].children[0];
 
   newImageDeleteButton.addEventListener("click", function () {
     deleteButtonAction(this);
-  });
-
-  newImageUploadButton.addEventListener("change", function () {
-    uploadPostButtonAction(this);
   });
 
   newImageEditButton.addEventListener("click", function () {
     uploadImageButtonAction(this);
   });
 
-  console.log(newImageUploadButton);
+  newImageUploadButton.addEventListener("change", function () {
+    uploadPostButtonAction(this);
+  });
+
+  console.log(newImageEditButton);
   savePosts();
 });
 
