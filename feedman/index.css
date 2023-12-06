@@ -185,9 +185,10 @@ body {
 .account-avatar {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
-    grid-area: avatar;
+    grid-area: avatar; 
     padding: 3.6vh 2vw;
     position: relative;
+    height: 19vh;
 }
 
 .account-avatar .avatar-img  {
@@ -259,6 +260,7 @@ body {
     -ms-grid-column: 3;
     grid-area: info;
     padding: 4vh 1.3vw;
+    height: 19vh;
 }
 
 .account-info span {
