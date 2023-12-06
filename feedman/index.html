@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedman / plan my feed</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- <div class="modal-notice notice-success"><span>aaa</span></div> -->
+    <div class="container">
+        <div class="upper">Feedman</div>
+        <div class="upperToggle">
+            <div class="upperToggleButton"></div>
+        </div>
+        <div class="account-avatar">
+            <input type="file" id="avatarFile" name="avatar" accept="image/png, image/jpeg, image/webp" />
+                <div class="avatar-img">
+                    <img src="contents/defaults/avatar.jpeg" alt="avatar image">
+                </div>
+        </div>
+        <div class="account-info">
+                <span class="account-name"></span>
+                <span class="account-bio"></span>
+        </div>
+        <div class="contents" id="moveable-contents">
+            <!-- contents will be here :) -->
+        </div>
+        <div class="footer">100% free open source software ∙ no ads ∙ no bullshit ∙ just works ∙ fuck israel<br>🄯 i hope you find it useful.
+    </div>
+    </div>
+    <div class="settings">
+        <ul>
+            <li class="setting-buttons ui-fit"></li>
+            <li class="setting-buttons ui-gap"></li>
+            <li class="setting-buttons ui-newImage"></li>
+            <li class="setting-buttons ui-edit"></li>
+            <li class="setting-buttons ui-config"></li>
+        </ul>
+    </div>
+    <script src="library/index.umd.js"></script>
+    <script src="library/Sortable.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

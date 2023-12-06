@@ -11,6 +11,22 @@ const progresBarDesktop = document.querySelector(".nav-desktop-left-mg");
 const progresBarMobile = document.querySelector(".nav-mobile-top-mg");
 const bagianContent = document.querySelector(".contents").children;
 
+const deskotpNavPreset = [
+  "nav-current-chapter-desktop",
+  "animate__animated",
+  "animate__heartBeat",
+  "animate__animated",
+  "animate__heartBeat",
+];
+
+const mobileNavPreset = [
+  "nav-current-chapter-mobile",
+  "animate__animated",
+  "animate__heartBeat",
+  "animate__animated",
+  "animate__heartBeat",
+];
+
 ////------- fungsi go to chapter navigasi -------////
 // bikin fungsi mau ke chapter berapa
 function gotoChapter(berapa) {
@@ -102,11 +118,11 @@ function hitungScrollBody() {
 ////------- trigger pas discroll ngapain saja -------////
 // cara jadul
 // ganti progres bar di navigasi sesuai scroll
- document.body.onscroll = function () {
-   progresBarDesktop.style.height = currentScrollPercentage() + "%";
-   progresBarMobile.style.width = currentScrollPercentage() + "%";
-//   // console.log(currentScrollPercentage());
- };
+document.body.onscroll = function () {
+  progresBarDesktop.style.height = currentScrollPercentage() + "%";
+  progresBarMobile.style.width = currentScrollPercentage() + "%";
+  //   // console.log(currentScrollPercentage());
+};
 
 // modern way
 // window.addEventListener("scroll", function () {
@@ -126,69 +142,70 @@ var contentsObserver = new IntersectionObserver(
     //   console.log("ch 1")
     // }
     if (entries[0].isIntersecting === true) {
-    switch (entries[0].target) {
-      case bagianContent["intro"] :
-        [tombolChapter1_desktop, tombolChapter1_mobile].forEach(function (tombol) {
-          tombol.classList.remove("nav-current-chapter", "animate__animated", "animate__heartBeat", "animate__animated", "animate__heartBeat");
-        });
-        [tombolChapter2_desktop, tombolChapter2_mobile].forEach(function (tombol) {
-          tombol.classList.remove("nav-current-chapter", "animate__animated", "animate__heartBeat");
-        });
-        [tombolChapter3_desktop, tombolChapter3_mobile].forEach(function (tombol) {
-          tombol.classList.remove("nav-current-chapter", "animate__animated", "animate__heartBeat");
-        });
-        break;
-      case bagianContent["end"] :
-        // console.log("intro/end");
-        break;
-      case bagianContent["chapter-1"] :
-        // console.log("chapter 1");
-        [tombolChapter1_desktop, tombolChapter1_mobile].forEach(function (tombol) {
-          tombol.classList.add("nav-current-chapter", "animate__animated", "animate__heartBeat", "animate__animated", "animate__heartBeat");
-        });
-        [tombolChapter2_desktop, tombolChapter2_mobile].forEach(function (tombol) {
-          tombol.classList.remove("nav-current-chapter", "animate__animated", "animate__heartBeat");
-        });
-        [tombolChapter3_desktop, tombolChapter3_mobile].forEach(function (tombol) {
-          tombol.classList.remove("nav-current-chapter", "animate__animated", "animate__heartBeat");
-        });
-        break;
-      case bagianContent["chapter-2"] :
-        // console.log("chapter 2");
-        [tombolChapter1_desktop, tombolChapter1_mobile].forEach(function (tombol) {
-          tombol.classList.remove("nav-current-chapter", "animate__animated", "animate__heartBeat");
-        });
-        [tombolChapter2_desktop, tombolChapter2_mobile].forEach(function (tombol) {
-          tombol.classList.add("nav-current-chapter", "animate__animated", "animate__heartBeat");
-        });
-        [tombolChapter3_desktop, tombolChapter3_mobile].forEach(function (tombol) {
-          tombol.classList.remove("nav-current-chapter", "animate__animated", "animate__heartBeat");
-        });
-        break;
-      case bagianContent["chapter-3"] :
-        [tombolChapter1_desktop, tombolChapter1_mobile].forEach(function (tombol) {
-          tombol.classList.remove("nav-current-chapter", "animate__animated", "animate__heartBeat");
-        });
-        [tombolChapter2_desktop, tombolChapter2_mobile].forEach(function (tombol) {
-          tombol.classList.remove("nav-current-chapter", "animate__animated", "animate__heartBeat");
-        });
-        [tombolChapter3_desktop, tombolChapter3_mobile].forEach(function (tombol) {
-          tombol.classList.add("nav-current-chapter", "animate__animated", "animate__heartBeat");
-        });
-        break;
-      default :
-        break;               
-    }
-    }
+      switch (entries[0].target) {
+        case bagianContent["intro"]:
+          tombolChapter1_desktop.classList.remove(...deskotpNavPreset);
+          tombolChapter2_desktop.classList.remove(...deskotpNavPreset);
+          tombolChapter3_desktop.classList.remove(...deskotpNavPreset);
 
+          tombolChapter1_mobile.classList.remove(...mobileNavPreset);
+          tombolChapter2_mobile.classList.remove(...mobileNavPreset);
+          tombolChapter3_mobile.classList.remove(...mobileNavPreset);
+
+          // [tombolChapter1_desktop, tombolChapter1_mobile].forEach(function (
+          //   tombol
+          // ) {
+          //   tombol.classList.add(
+          //     "nav-current-chapter",
+          //     "animate__animated",
+          //     "animate__heartBeat",
+          //     "animate__animated",
+          //     "animate__heartBeat"
+          //   );
+          // });
+          break;
+        case bagianContent["end"]:
+          // console.log("intro/end");
+          break;
+        case bagianContent["chapter-1"]:
+          // console.log("chapter 1");
+          tombolChapter1_desktop.classList.add(...deskotpNavPreset);
+          tombolChapter2_desktop.classList.remove(...deskotpNavPreset);
+          tombolChapter3_desktop.classList.remove(...deskotpNavPreset);
+
+          tombolChapter1_mobile.classList.add(...mobileNavPreset);
+          tombolChapter2_mobile.classList.remove(...mobileNavPreset);
+          tombolChapter3_mobile.classList.remove(...mobileNavPreset);
+
+          break;
+        case bagianContent["chapter-2"]:
+          // console.log("chapter 2");
+          tombolChapter1_desktop.classList.remove(...deskotpNavPreset);
+          tombolChapter2_desktop.classList.add(...deskotpNavPreset);
+          tombolChapter3_desktop.classList.remove(...deskotpNavPreset);
+
+          tombolChapter1_mobile.classList.remove(...mobileNavPreset);
+          tombolChapter2_mobile.classList.add(...mobileNavPreset);
+          tombolChapter3_mobile.classList.remove(...mobileNavPreset);
+          break;
+        case bagianContent["chapter-3"]:
+          tombolChapter1_desktop.classList.remove(...deskotpNavPreset);
+          tombolChapter2_desktop.classList.remove(...deskotpNavPreset);
+          tombolChapter3_desktop.classList.add(...deskotpNavPreset);
+
+          tombolChapter1_mobile.classList.remove(...mobileNavPreset);
+          tombolChapter2_mobile.classList.remove(...mobileNavPreset);
+          tombolChapter3_mobile.classList.add(...mobileNavPreset);
+          break;
+        default:
+          break;
+      }
+    }
   },
   { threshold: 0.5 }
 );
 
-
 // contentsObserver.observe(bagianContent["chapter-1"]);
- Object.values(bagianContent).forEach((yangMana) => {
-   contentsObserver.observe(yangMana);
- });
-
-
+Object.values(bagianContent).forEach((yangMana) => {
+  contentsObserver.observe(yangMana);
+});
